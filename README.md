@@ -1,6 +1,6 @@
 # Tarea Web Components
 
-Para esta tarea se requiere tener bases en la creación de web components, eres libre de usar los nombres que quiera, un ejemplo [aquí](<[https://](https://github.com/earamirez-personal/wc-mi-boton)https://>), si quieres aplicar estilos CSS puedes hacerlo a tu conveniencia.
+Para esta tarea se requiere tener bases en la creación de web components, eres libre de usar los nombres que quiera, un ejemplo [aquí]([https://github.com/earamirez-personal/wc-mi-boton]), si quieres aplicar estilos CSS puedes hacerlo a tu conveniencia.
 
 ## Descripción
 
