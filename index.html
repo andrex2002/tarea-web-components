@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+</head>
+
+<body>
+    <template id="usuario-template">
+        <style>
+            .usuario-card {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .usuario-img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .usuario-info {
+                flex: 1;
+            }
+        </style>
+        <div class="usuario-card">
+            <img class="usuario-img">
+            <div class="usuario-info">
+                <h2 class="usuario-nombre"></h2>
+                <p class="usuario-email"></p>
+                <button class="ver-email-btn">Ver Email</button>
+            </div>
+        </div>
+    </template>
+
+    <wc-usuarios lista='[{"foto": "https://via.placeholder.com/80", 
+        "nombre": "Usuario 1", "email": "usuario1@example.com"}, 
+        {"foto": "https://via.placeholder.com/80", 
+        "nombre": "Usuario 2", "email": "usuario2@example.com"}, 
+        {"foto": "https://via.placeholder.com/80", 
+        "nombre": "Usuario 3", "email": "usuario3@example.com"}, 
+        {"foto": "https://via.placeholder.com/80", 
+        "nombre": "Usuario 4", "email": "usuario4@example.com"}, 
+        {"foto": "https://via.placeholder.com/80", 
+        "nombre": "Usuario 5", "email": "usuario5@example.com"}]'>
+    </wc-usuarios>
+
+    <script src="mi-boton.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const usuariosComponent = document.querySelector("wc-usuarios");
+
+            usuariosComponent.addEventListener("ver-email", (event) => {
+                console.log("Correo electrónico:", event.detail.email);
+            });
+        });
+    </script>
+</body>
+
+</html>
